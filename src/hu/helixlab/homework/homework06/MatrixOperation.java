@@ -30,13 +30,15 @@ public class MatrixOperation implements IMatrixOperation{
         return array2;
     }
 
-    public int[] multiplyWithScalar(int scalar, int[] multiplyInArray){
+    public int[][] multiplyWithScalar(int scalar, int[][] multiplyInArray){
 
         for(int i = 0; i < multiplyInArray.length; ++i){
-            multiplyInArray[i] = multiplyInArray[i] * scalar;
-            System.out.print(multiplyInArray[i] + " ");
+            for(int j = 0; j < multiplyInArray.length; ++j) {
+                multiplyInArray[i][j] = multiplyInArray[i][j] * scalar;
+                System.out.print("\t" + multiplyInArray[i][j]);
+            }
+            System.out.println();
         }
-
         return multiplyInArray;
     }
 }
