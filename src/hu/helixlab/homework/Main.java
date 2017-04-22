@@ -52,8 +52,8 @@ public class Main {
 
         //5. This will multiply two array elements with each other.
         System.out.println();
-        int[] sumArrayFirst = {1, 7, 8, 3, 5, 2};
-        int[] sumArraySecond = {4, 3, 7, 6, 9, 10};
+        int[][] sumArrayFirst = {{1, 7, 8, 3},{3, 5, 2, 7},{4, 7, 3, 1}};
+        int[][] sumArraySecond = {{4, 3, 7, 6},{6, 9, 10, 3},{2, 6, 1, 5}};
         matrixOperation.sum(sumArrayFirst, sumArraySecond);
     }
 }

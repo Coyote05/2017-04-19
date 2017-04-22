@@ -2,6 +2,8 @@ package hu.helixlab.homework.homework06;
 
 public class MatrixOperation implements IMatrixOperation{
 
+    private int arrayLength;
+
     public void printMatrix(int[][] array){
 
         for(int i = 0; i < array.length; ++i){
@@ -40,5 +42,25 @@ public class MatrixOperation implements IMatrixOperation{
             System.out.println();
         }
         return multiplyInArray;
+    }
+
+    public int[][] sum(int[][] sumArrayFirst, int[][] sumArraySecond){
+
+        if(sumArrayFirst.length == sumArraySecond.length){
+            arrayLength = sumArrayFirst.length;
+        }
+        else{
+            System.out.println("Nem egyforma méretű a két tömb!");
+        }
+        int[][] summedArray = new int[sumArrayFirst.length][sumArrayFirst[0].length];
+
+        for(int i = 0; i < arrayLength; ++i){
+            for(int j = 0; j < arrayLength+1; ++j){
+                summedArray[i][j] = sumArrayFirst[i][j] + sumArraySecond[i][j];
+                System.out.print("\t" + summedArray[i][j]);
+            }
+            System.out.println();
+        }
+        return summedArray;
     }
 }
