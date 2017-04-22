@@ -34,6 +34,7 @@ public class Main {
 */
         //---------------------------------------------------------------------------------
 
+        //2. This will print the perimeters and areas of a rectangle and a triangle.
         Rectangle rectangle = new Rectangle();
         System.out.println("A téglalap kerülete: " + rectangle.getPerimeter());
         System.out.println("A téglalap területe: " + rectangle.getArea());
@@ -48,5 +49,11 @@ public class Main {
         MatrixOperation matrixOperation = new MatrixOperation();
         int [] multiplyInArray = {3, 5, 2, 6, 9, 1};
         matrixOperation.multiplyWithScalar(3, multiplyInArray);
+
+        //5. This will multiply two array elements with each other.
+        System.out.println();
+        int[] sumArrayFirst = {1, 7, 8, 3, 5, 2};
+        int[] sumArraySecond = {4, 3, 7, 6, 9, 10};
+        matrixOperation.sum(sumArrayFirst, sumArraySecond);
     }
 }
