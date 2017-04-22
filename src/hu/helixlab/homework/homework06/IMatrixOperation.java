@@ -6,7 +6,7 @@ public interface IMatrixOperation {
 
     int[][] initMatrixWithRandomNumbers(int m, int n, int randomMin, int randomMax);
 
-    int[] multiplyWithScalar(int scalar, int[] multiplyInArray);
+    int[][] multiplyWithScalar(int scalar, int[][] multiplyInArray);
 
-    int[] sum(int[] sumArrayFirst, int[] sumArraySecond);
+    int[][] sum(int[][] sumArrayFirst, int[][] sumArraySecond);
 }
