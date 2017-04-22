@@ -18,10 +18,12 @@ public class Rectangle extends AbstractShape {
     }
     public float getPerimeter(){
 
+        float perimeter = 2 * (a + b);
         return perimeter;
     }
     public float getArea(){
 
+        float area = a * b;
         return area;
     }
 

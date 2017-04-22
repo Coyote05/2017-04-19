@@ -34,6 +34,13 @@ public class Main {
 */
         //---------------------------------------------------------------------------------
 
+        Rectangle rectangle = new Rectangle();
+        System.out.println("A téglalap kerülete: " + rectangle.getPerimeter());
+        System.out.println("A téglalap területe: " + rectangle.getArea());
 
+        System.out.println();
+        Triangle triangle = new Triangle();
+        System.out.println("A háromszög kerülete: " + triangle.getPerimeter());
+        System.out.println("A háromszög területe: " + triangle.getArea());
     }
 }
