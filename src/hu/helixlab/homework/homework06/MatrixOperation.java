@@ -29,4 +29,14 @@ public class MatrixOperation implements IMatrixOperation{
         }
         return array2;
     }
+
+    public int[] multiplyWithScalar(int scalar, int[] multiplyInArray){
+
+        for(int i = 0; i < multiplyInArray.length; ++i){
+            multiplyInArray[i] = multiplyInArray[i] * scalar;
+            System.out.print(multiplyInArray[i] + " ");
+        }
+
+        return multiplyInArray;
+    }
 }

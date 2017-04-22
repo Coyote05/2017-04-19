@@ -42,5 +42,11 @@ public class Main {
         Triangle triangle = new Triangle();
         System.out.println("A háromszög kerülete: " + triangle.getPerimeter());
         System.out.println("A háromszög területe: " + triangle.getArea());
+
+        //4. This will multiply an array with a scalar and print the multiplied array.
+        System.out.println();
+        MatrixOperation matrixOperation = new MatrixOperation();
+        int [] multiplyInArray = {3, 5, 2, 6, 9, 1};
+        matrixOperation.multiplyWithScalar(3, multiplyInArray);
     }
 }
