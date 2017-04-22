@@ -1,12 +1,11 @@
 package hu.helixlab.homework;
 
-import hu.helixlab.homework.homework06.MatrixOperation;
-import hu.helixlab.homework.homework06.Sort;
+import hu.helixlab.homework.homework06.*;
 
 public class Main {
 
     public static void main(String[] args) {
-
+/*
         Sort sort = new Sort();
 
         System.out.println();
@@ -32,9 +31,8 @@ public class Main {
         System.out.println("Harmadik feladat");
 
         matrixOperation.initMatrixWithRandomNumbers(5,4, 2,5);
-
+*/
         //---------------------------------------------------------------------------------
-
 
 
     }
