@@ -37,8 +37,8 @@ public class Triangle extends AbstractShape {
     }
     public float getArea(){
 
-        float betaInRadian = (float) Math.toRadians(beta);
-        float area = (float) ((Math.sin(betaInRadian) * a * c) / 2);
+        float halfPerimeter = (a + b + c) / 2;
+        float area = (float) Math.sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c));
         return area;
     }
 
