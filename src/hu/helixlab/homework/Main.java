@@ -47,7 +47,7 @@ public class Main {
         //4. This will multiply an array with a scalar and print the multiplied array.
         System.out.println();
         MatrixOperation matrixOperation = new MatrixOperation();
-        int [][] multiplyInArray = {{3, 5, 2},{6, 9, 1},{4, 7, 8}};
+        int [][] multiplyInArray = {{3, 5, 2, 4},{6, 9, 1, 3},{4, 7, 8, 9}};
         matrixOperation.multiplyWithScalar(3, multiplyInArray);
 
         //5. This will multiply two array elements with each other.

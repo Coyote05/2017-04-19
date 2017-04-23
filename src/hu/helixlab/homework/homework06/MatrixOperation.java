@@ -34,14 +34,15 @@ public class MatrixOperation implements IMatrixOperation{
 
     public int[][] multiplyWithScalar(int scalar, int[][] multiplyInArray){
 
+        int[][] multipliedArray = new int[multiplyInArray.length][multiplyInArray[0].length];
         for(int i = 0; i < multiplyInArray.length; ++i){
-            for(int j = 0; j < multiplyInArray.length; ++j) {
-                multiplyInArray[i][j] = multiplyInArray[i][j] * scalar;
-                System.out.print("\t" + multiplyInArray[i][j]);
+            for(int j = 0; j < multiplyInArray[0].length; ++j) {
+                multipliedArray[i][j] = multiplyInArray[i][j] * scalar;
+                System.out.print("\t" + multipliedArray[i][j]);
             }
             System.out.println();
         }
-        return multiplyInArray;
+        return multipliedArray;
     }
 
     public int[][] sum(int[][] sumArrayFirst, int[][] sumArraySecond){
