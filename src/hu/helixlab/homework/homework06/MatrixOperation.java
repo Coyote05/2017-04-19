@@ -46,7 +46,7 @@ public class MatrixOperation implements IMatrixOperation{
 
     public int[][] sum(int[][] sumArrayFirst, int[][] sumArraySecond){
 
-        if(sumArrayFirst.length == sumArraySecond.length){
+        if(sumArrayFirst.length == sumArraySecond.length && sumArrayFirst[0].length == sumArraySecond[0].length){
             arrayLength = sumArrayFirst.length;
         }
         else{
@@ -55,7 +55,7 @@ public class MatrixOperation implements IMatrixOperation{
         int[][] summedArray = new int[sumArrayFirst.length][sumArrayFirst[0].length];
 
         for(int i = 0; i < arrayLength; ++i){
-            for(int j = 0; j < arrayLength+1; ++j){
+            for(int j = 0; j < sumArrayFirst[0].length; ++j){
                 summedArray[i][j] = sumArrayFirst[i][j] + sumArraySecond[i][j];
                 System.out.print("\t" + summedArray[i][j]);
             }
